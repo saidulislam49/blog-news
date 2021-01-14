@@ -1,0 +1,21 @@
+
+.row{
+    width: 114rem;
+    margin: auto;  
+     
+}
+[class^="col-"]{ 
+    &:not(:last-child){
+        margin-right: 30px;
+    }
+    float: left;
+}
+.col-1-of-2{
+    width: calc((100% - 30px) / 2);
+}
+.col-1-of-3{
+    width: calc((100% - 60px ) / 3);
+}
+.col-2-of-3{
+    width: calc(2 * ((100% - 60px ) / 3) + 30px);
+}
